@@ -36,7 +36,7 @@ namespace server
 
             if (msg == "")
             {
-                IPEndPoint ipe2 = new IPEndPoint(IPAddress.Parse("172.30.176.1"), 14000);
+                IPEndPoint ipe2 = new IPEndPoint(IPAddress.Parse(myip), 14000);
                 Socket s2 = new Socket(ipe2.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
                 s2.Bind(ipe2);
                 s2.Listen(1);
